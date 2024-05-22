@@ -99,9 +99,6 @@ class OCR(KNN):
         
 
 if __name__ == "__main__":
-    ocr = OCR("letters")
+    ocr = OCR()
     print(ocr.ocr_image("test.PNG"))
-    print(ocr.ocr_image("test copy.PNG"))
-    while ocr.ocr_image("test copy.PNG") != "BONJOURJESUISEN4EMEETJESUISNEEN1983LE7":
-        ocr.train_image("test copy.PNG", "BONJOURJESUISEN4EMEETJESUISNEEN1983LE7")
-        print(ocr.ocr_image("test copy.PNG"))
+
