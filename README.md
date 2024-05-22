@@ -29,7 +29,7 @@ from ocr import OCR
 
 ocr = OCR()
 ocr.load_json("trained.json")
-print(ocr.predict("image.png"))
+print(ocr.ocr_image("image.png"))
 ```
 
 ### Use a pre-trained model
@@ -38,6 +38,6 @@ print(ocr.predict("image.png"))
 from ocr import OCR
 
 ocr = OCR("numbers")
-print(ocr.predict("image.png"))
+print(ocr.ocr_image("image.png"))
 ```
 
